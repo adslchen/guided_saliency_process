@@ -29,7 +29,10 @@ prefix =  "COCO_train2014_"
 ```
 
 
-#### run it
+##### run it
+```
+python saliency_process.py
+```
 
 
 
