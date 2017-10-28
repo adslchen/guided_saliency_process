@@ -70,7 +70,7 @@ def loadFiles(images_ID):
     for image_ID in images_ID:
         #image_file = "../images/COCO_train2014_{:012}.jpg".format(image_ID)
         #saliency_file = "../../COCO_saliency/COCO_train2014_{:012}.jpg".format(image_ID)
-        saliency_file = "/home/yuandy/saliency-salgan-2017/128_32_2down_COCO_prediction/COCO_train2014_{:012}.jpg".format(image_ID)
+        saliency_file = original_saliency_path + "COCO_train2014_{:012}.jpg".format(image_ID)
         #I.append(io.imread(image_file))
         S.append(io.imread(saliency_file))
     #return {'images':I,'saliency':S}
@@ -196,6 +196,7 @@ if __name__ == "__main__":
 
     # Parameters
     coco_instance_path = "../annotations/instances_train2014.json"
+    original_saliency_path = "my_path/"
     guided_saliency_path = "128_32_2down_COCO_guided_norm_scale/"
     prefix =  "COCO_train2014_"
     c = COCO(coco_instance_path)
