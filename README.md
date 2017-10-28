@@ -12,14 +12,15 @@ This tool will do
 * Detect whether the new most salient object contain max pixel value.
 If yes, do nothing, if no, scale the new most salient object.
 
-#### Dependencies
-* [MSCOCO](http://cocodataset.org/#download)
+### Dependencies
+#### [MSCOCO](http://cocodataset.org/#download)
+
 Need download COCO API and place cocoapi/PythonAPI/pycocotools on the same
 directory.
 
 
-#### Usages
-##### Add the parameters
+### Usages
+#### Add the parameters
 ```
 coco_instance_path = "../annotations/instances_train2014.json"
 original_saliency_path = "my_path/"
@@ -29,7 +30,7 @@ prefix =  "COCO_train2014_"
 ```
 
 
-##### run it
+#### run it
 ```
 python saliency_process.py
 ```
